@@ -11,11 +11,21 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
+    <!-- MY CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- GOOGLE FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/c073da2dc9.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Frontend Mentor | Chat app CSS Illustration</title>
 
@@ -34,15 +44,25 @@
     <div id="leftstroke">&nbsp;</div>
     <div id="rightstroke">&nbsp;</div>
 
-    <div class="product">
-      <div class="phone">
-        <div class="appcontact">
-          <img src="images/left-arrow.png" class="arrow" alt="arrow" />
-          Samuel Green Available to Walk
+    <div class="grid-container">
+      <div class="grid-item" id="phone">
+        <div class="contactbg">
+          <div id="phonespeaker">&nbsp;</div>
+          <div class="contact">
+            <i class="fas fa-chevron-left" id="back"></i>
+            <img src="images/avatar.jpg" class="avatar" alt="avatar" />
+            <h5>Samuel Green</h5>
+            <p id="status">Available to Walk</p>
+            <i class="fas fa-ellipsis-v" id="menu"></i>
+          </div>
         </div>
-        <p>That sounds great. I’d be happy with that.</p>
-        <p>Could you send over some pictures of your dog, please?</p>
-
+        <div class="leftchat">
+          <p>That sounds great. I’d be happy with that.</p>
+        </div>
+        <div>
+          <p>Could you send over some pictures of your dog, please?</p>
+        </div>
+        <!-- Pictures -->
         <p>Here are a few pictures. She’s a happy girl!</p>
         <p>Can you make it?</p>
 
@@ -55,11 +75,15 @@
         <p>Type a message…placeholder*</p>
       </div>
 
-      <div id="description">
-        <h1 style="font-weight: 500; color: hsl(271, 36%, 24%)">
+      <div class="grid-item" id="description">
+        <h1
+          style="font-size: 1.8rem; font-weight: 500; color: hsl(271, 36%, 24%)"
+        >
           Simple booking
         </h1>
-        <p style="color: hsl(270, 7%, 64%); line-height: 2">
+        <p
+          style="font-size: 0.8rem; color: hsl(270, 7%, 64%); line-height: 1.7"
+        >
           Stay in touch with our dog walkers through the chat interface. This
           makes it easy to discuss arrangements and make bookings. Once the walk
           has been completed you can rate your walker and book again all through
