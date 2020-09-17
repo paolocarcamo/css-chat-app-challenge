@@ -4,25 +4,12 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-h5 {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  color: rgb(245, 243, 248);
-  font-weight: 400;
-  font-size: 0.75rem;
-}
-
 p {
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
 
-#status {
-  font-size: 0.53rem;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  color: hsl(276, 100%, 81%);
-}
+/* Background brushstrokes of color */
 
 #leftstroke {
   background: linear-gradient(
@@ -48,14 +35,16 @@ p {
   border-radius: 90% 0 0 0;
 }
 
-#description {
-  width: 400px;
-  height: 200px;
-  padding: 10px;
-  position: relative;
-  top: 25%;
-  left: 15%;
+/* Container of Phone & Description */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  padding-top: 38px;
 }
+
+/* Phone Styles */
 
 #phone {
   height: 525px;
@@ -83,6 +72,22 @@ p {
   float: left;
 }
 
+.avatar {
+  border-radius: 100%;
+  border: 1px solid hsl(0, 0%, 100%);
+  width: 25px;
+  float: left;
+  margin: 0px 10px 0px 5px;
+}
+
+h5 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  color: rgb(245, 243, 248);
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
 #menu {
   color: rgba(253, 251, 255, 0.856);
   height: 10px;
@@ -90,6 +95,13 @@ p {
   position: absolute;
   right: 15px;
   top: 45px;
+}
+
+#status {
+  font-size: 0.53rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  color: hsl(276, 100%, 81%);
 }
 
 #messagearea {
@@ -131,9 +143,9 @@ p {
   left: 9px;
 }
 #rightchat3 {
-  width: 78px;
+  width: 68px;
   position: relative;
-  left: 47px;
+  left: 57px;
 }
 
 #align-right {
@@ -143,7 +155,7 @@ p {
 
 #pics {
   position: relative;
-  left: 93px;
+  left: 97px;
   margin: 10px 0px 0px 0px;
 }
 
@@ -153,18 +165,13 @@ p {
   margin: 0px 3px;
 }
 
-.avatar {
-  border-radius: 100%;
-  border: 1px solid hsl(0, 0%, 100%);
-  width: 25px;
-  float: left;
-  margin: 0px 10px 0px 5px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding-top: 40px;
+#description {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  top: 25%;
+  left: 15%;
 }
 
 .contactbg {
@@ -174,7 +181,7 @@ p {
     hsl(293, 100%, 63%)
   );
   height: 80px;
-  border-radius: 30px 30px 10px 10px;
+  border-radius: 22px 22px 10px 10px;
   margin-bottom: 10px;
 }
 
@@ -193,12 +200,13 @@ p {
   word-wrap: break-word;
   border-radius: 10px 10px 10px 5px;
 }
+
 .rightchat {
   background-color: hsl(0, 0%, 100%);
   color: hsl(271, 36%, 24%);
-  font-size: 0.3rem;
+  font-size: 8.5px;
   width: 125px;
-  padding: 1.5em;
+  padding: 1em;
   margin: 6px 13px 10px 0px;
   word-wrap: break-word;
   border-radius: 10px 10px 5px 10px;
@@ -231,7 +239,7 @@ p {
   border: 1px solid hsl(289, 100%, 72%);
   position: absolute;
   left: 20px;
-  top: 385px;
+  top: 390px;
 }
 
 #radio2 {
@@ -242,7 +250,7 @@ p {
   border: 1px solid hsl(289, 100%, 72%);
   position: absolute;
   left: 20px;
-  top: 435px;
+  top: 440px;
 }
 
 #thirtymin {
@@ -259,4 +267,33 @@ p {
   margin-top: 15px;
   font-size: 0.5rem;
   color: rgb(225, 224, 228);
+}
+
+@media (max-width: 750px) {
+  .grid-container {
+    display: block;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    padding-top: none;
+  }
+
+  #phone {
+    left: 0;
+    margin: auto;
+  }
+
+  #description {
+    text-align: center;
+    left: 0;
+    margin: auto;
+    padding-bottom: 3rem;
+  }
+
+  #rightstroke {
+    position: fixed;
+  }
+
+  #leftstroke {
+    position: fixed;
+  }
 }

@@ -30,107 +30,83 @@
     <title>Chat App CSS</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 9px;
-        text-align: right;
-        padding: 10px;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
+    <!-- COLOR STROKES -->
     <div id="leftstroke">&nbsp;</div>
     <div id="rightstroke">&nbsp;</div>
-    <div id="product">
-      <div class="grid-container">
-        <div class="grid-item" id="phone">
-          <div class="contactbg">
-            <div id="phonespeaker">&nbsp;</div>
-            <div class="contact">
-              <i class="fas fa-chevron-left fa-xs" id="back"></i>
-              <img src="images/avatar.jpg" class="avatar" alt="avatar" />
-              <h5>Samuel Green</h5>
-              <p id="status">Available to Walk</p>
-              <i class="fas fa-ellipsis-v fa-xs" id="menu"></i>
-            </div>
-          </div>
-          <div class="leftchat">
-            <p>That sounds great. I’d be happy with that.</p>
-          </div>
-          <div class="leftchat">
-            <p>Could you send over some pictures of your dog, please?</p>
-          </div>
-          <div id="pics" style="display: inline-block">
-            <img class="doggopics" src="images/dog-image-1.jpg" alt="dogpic2" />
-            <img class="doggopics" src="images/dog-image-2.jpg" alt="dogpic1" />
-            <img class="doggopics" src="images/dog-image-3.jpg" alt="dogpic3" />
-          </div>
-          <div id="align-right">
-            <div class="rightchat">
-              <p>Here are a few pictures. She’s a happy girl!</p>
-            </div>
-            <div class="rightchat" id="rightchat3">
-              <p>Can you make it?</p>
-            </div>
-          </div>
-          <div class="leftchat">
-            <p>
-              She looks so happy! The time we discussed works. How long shall I
-              take her out for?
-            </p>
-          </div>
-          <div>
-            <div id="radio1">&nbsp;</div>
-            <p id="thirtymin">30 minute walk</p>
-            <p class="pricing">$29</p>
-          </div>
-          <div>
-            <div id="radio2">&nbsp;</div>
-            <p id="onehour">1 hour walk</p>
-            <p class="pricing">$49</p>
-          </div>
-          <div id="messagearea">
-            <p id="text">Type a message...</p>
-            <div id="submitbtn">
-              <i id="send" class="fas fa-chevron-right fa-xs"></i>
-            </div>
+
+    <!-- CONTAINER -->
+    <div class="grid-container">
+      <div class="grid-item" id="phone">
+        <div class="contactbg">
+          <div id="phonespeaker">&nbsp;</div>
+          <div class="contact">
+            <i class="fas fa-chevron-left fa-xs" id="back"></i>
+            <img src="images/avatar.jpg" class="avatar" alt="avatar" />
+            <h5>Samuel Green</h5>
+            <p id="status">Available to Walk</p>
+            <i class="fas fa-ellipsis-v fa-xs" id="menu"></i>
           </div>
         </div>
-
-        <div class="grid-item" id="description">
-          <h1
-            style="
-              font-size: 2.5rem;
-              font-weight: 500;
-              color: hsl(271, 36%, 24%);
-            "
-          >
-            Simple booking
-          </h1>
-          <p
-            style="
-              font-size: 0.9rem;
-              color: hsl(270, 7%, 64%);
-              line-height: 1.9;
-            "
-          >
-            Stay in touch with our dog walkers through the chat interface. This
-            makes it easy to discuss arrangements and make bookings. Once the
-            walk has been completed you can rate your walker and book again all
-            through the chat.
+        <div class="leftchat">
+          <p>That sounds great. I’d be happy with that.</p>
+        </div>
+        <div class="leftchat">
+          <p>Could you send over some pictures of your dog, please?</p>
+        </div>
+        <div id="pics" style="display: inline-block">
+          <img class="doggopics" src="images/dog-image-1.jpg" alt="dogpic2" />
+          <img class="doggopics" src="images/dog-image-2.jpg" alt="dogpic1" />
+          <img class="doggopics" src="images/dog-image-3.jpg" alt="dogpic3" />
+        </div>
+        <div id="align-right">
+          <div class="rightchat">
+            <p>Here are a few pictures. She’s a happy girl!</p>
+          </div>
+          <div class="rightchat" id="rightchat3">
+            <p>Can you make it?</p>
+          </div>
+        </div>
+        <div class="leftchat">
+          <p>
+            She looks so happy! The time we discussed works. How long shall I
+            take her out for?
           </p>
         </div>
+        <div>
+          <div id="radio1">&nbsp;</div>
+          <p id="thirtymin">30 minute walk</p>
+          <p class="pricing">$29</p>
+        </div>
+        <div>
+          <div id="radio2">&nbsp;</div>
+          <p id="onehour">1 hour walk</p>
+          <p class="pricing">$49</p>
+        </div>
+        <div id="messagearea">
+          <p id="text">Type a message...</p>
+          <div id="submitbtn">
+            <i id="send" class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://paolocarcamo.github.io/digital_cv/">Paolo Carcamo</a>.
+
+      <div class="grid-item" id="description">
+        <h1
+          style="font-size: 2.5rem; font-weight: 500; color: hsl(271, 36%, 24%)"
+        >
+          Simple booking
+        </h1>
+        <p
+          style="font-size: 0.9rem; color: hsl(270, 7%, 64%); line-height: 1.9"
+        >
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
     </div>
   </body>
 </html>
