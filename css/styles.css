@@ -269,7 +269,7 @@ h5 {
   color: rgb(225, 224, 228);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .grid-container {
     display: block;
     grid-template-columns: none;
@@ -280,13 +280,15 @@ h5 {
   #phone {
     left: 0;
     margin: auto;
+    z-index: 2;
   }
 
   #description {
     text-align: center;
     left: 0;
     margin: auto;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
+    width: 320px;
   }
 
   #rightstroke {
